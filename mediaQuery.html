@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query &copysr;</title>
+    <style>
+        div{
+            width: 80%;
+            background-color: rebeccapurple;
+        }
+        div p:nth-child(odd){
+            width: 20%;
+            height: 80px;
+            background-color: saddlebrown;
+        }
+        div p:nth-child(2){
+            width: 30%;
+            height: 60px;
+            background-color: salmon;
+        }
+         
+        /*Large Devices*/
+        @media (min-width: 1200px){
+            div{
+            width: 80%;
+            background-color: red;
+        }
+        div p:nth-child(odd){
+            width: 20%;
+            height: 80px;
+            background-color: violet;
+        }
+        div p:nth-child(2){
+            width: 30%;
+            height: 60px;
+            background-color: yellow;
+        } 
+
+        }
+
+                    /* Memium Devices */
+        @media (max-width: 1199px) and (min-width: 991px) {
+            div{
+            width: 80%;
+            background-color: paleturquoise;
+        }
+        div p:nth-child(odd){
+            width: 20%;
+            height: 80px;
+            background-color: royalblue;
+        }
+        div p:nth-child(2){
+            width: 30%;
+            height: 60px;
+            background-color: chocolate;
+        }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>
